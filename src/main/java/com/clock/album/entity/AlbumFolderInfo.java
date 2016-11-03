@@ -11,7 +11,6 @@ import java.util.List;
  */
 public class AlbumFolderInfo implements Serializable {
 
-
     /**
      * 目录名
      */

@@ -24,6 +24,11 @@ public class ImageScannerPresenterImpl implements ImageScannerPresenter {
         mAlbumView = albumView;
     }
 
+    /**
+     * 在实现--扫描获取图片文件夹列表--的方法里面，调用另一个接口--图片扫描Model层接口中的startAcanImage这个方法--
+     * @param context
+     * @param loaderManager 获取系统图片的LoaderManager
+     */
     @Override
     public void startScanImage(final Context context, LoaderManager loaderManager) {
         mScannerModel.startScanImage(context, loaderManager, new ImageScannerModel.OnScanImageFinish() {
